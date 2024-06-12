@@ -13,5 +13,27 @@ jobs:
     - name: Run shell script
       run: |
         #!/bin/bash
-        apt-get install -y nodejs
         echo "Hello World From Docker"
+        echo "Starting build process..."
+
+          # Simulate installation of dependencies
+          echo "Installing dependencies..."
+          sleep 2 # Simulate loading time
+          echo "Dependencies installed successfully."
+
+          # Simulate running tests
+          echo "Running tests..."
+          sleep 2 # Simulate loading time
+          echo "Tests completed successfully."
+
+          # Simulate building artifacts
+          echo "Building artifacts..."
+          sleep 2 # Simulate loading time
+          echo "Artifacts built successfully."
+
+          # Simulate deployment
+          echo "Deploying..."
+          sleep 2 # Simulate loading time
+          echo "Deployment completed successfully."
+
+          echo "CI/CD process completed successfully!"
