@@ -17,11 +17,12 @@ jobs:
         uses: actions/setup-node
         with:
           node-version: "18"
-      - name: Run shell script   
-      run: |
-        #!/bin/bash
-        echo "Hello World From Docker"
-        echo "Starting build process..."
+      
+      - name: Run shell script
+        run: |
+          #!/bin/bash
+          echo "Hello World From Docker"
+          echo "Starting build process..."
 
           # Simulate installation of dependencies
           echo "Installing dependencies..."
