@@ -17,6 +17,7 @@ jobs:
         uses: actions/setup-node
         with:
           node-version: "18"
+        run : npm install
       
       - name: Run shell script
         run: |
@@ -45,3 +46,4 @@ jobs:
           echo "Deployment completed successfully."
 
           echo "CI/CD process completed successfully!"
+          
