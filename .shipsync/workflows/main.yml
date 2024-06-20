@@ -18,8 +18,8 @@ jobs:
         with:
           node-version: "18"
         
-      - name : Install Dependencies
-        run : npm install && npm t
+      - name : Install Dependencies and run test
+        run : npm ci && npm t
       
       - name: Run shell script
         run: |
