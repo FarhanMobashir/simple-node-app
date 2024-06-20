@@ -23,7 +23,6 @@ jobs:
       
       - name: Run shell script
         run: |
-          #!/bin/bash
           echo "Hello World From Docker"
           echo "Starting build process..."
 
