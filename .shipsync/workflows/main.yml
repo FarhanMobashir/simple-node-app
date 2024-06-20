@@ -17,6 +17,8 @@ jobs:
         uses: actions/setup-node
         with:
           node-version: "18"
+        
+      - name : Install Dependencies
         run : npm install && npm t
       
       - name: Run shell script
