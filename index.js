@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
-    res.send('Hello World From GCP!');
+    res.send('Hello World From Testing again!');
 });
 
 if (require.main === module) {
