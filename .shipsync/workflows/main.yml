@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: alpine
+    runs-on: ubuntu
 
     steps:
       - name: Checkout repository
@@ -17,10 +17,10 @@ jobs:
         uses: actions/setup-node
         with:
           node-version: "18"
-        
-      - name : Install Dependencies and run test
-        run : npm ci && npm t
-      
+
+      - name: Install Dependencies and run test
+        run: npm ci && npm t
+
       - name: Run shell script
         run: |
           echo "Hello World From Docker"
@@ -47,4 +47,3 @@ jobs:
           echo "Deployment completed successfully."
 
           echo "CI/CD process completed successfully!"
-          
