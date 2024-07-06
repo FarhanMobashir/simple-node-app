@@ -22,3 +22,4 @@ jobs:
         run: |
           echo "Hello World From Docker"
           echo "this is the secret - {{secrets.token}}"
+          echo "this is the another secret - {{secrets.sshKey}}"
