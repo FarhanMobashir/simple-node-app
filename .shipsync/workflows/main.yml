@@ -20,6 +20,6 @@ jobs:
 
       - name: Run shell script
         run: |
-          echo "Hello World Script Running part"
+          echo "Hello World testing pull request"
           echo "this is the secret - {{secrets.token}}"
           echo "this is the another secret - {{secrets.sshKey}}"
