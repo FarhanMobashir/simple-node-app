@@ -20,5 +20,6 @@ jobs:
 
       - name: Run shell script
         run: |
-          echo "Hello World From Docker"
+          echo "Hello World Script Running part"
           echo "this is the secret - {{secrets.token}}"
+          echo "this is the another secret - {{secrets.sshKey}}"
