@@ -21,4 +21,4 @@ jobs:
       - name: Run shell script
         run: |
           echo "Hello World From Docker"
-          echo "this is the secret - ${{SECRETS.token}}"
+          echo "this is the secret - {{secrets.token}}"
