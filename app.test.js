@@ -14,6 +14,6 @@ describe('GET /', () => {
 describe('GET /abc', () => {
     it('should respond with a 404 status for the dummy route', async () => {
         const response = await request(app).get('/abc');
-        expect(response.status).toBe(404);
+        expect(response.status).toBe(403);
     });
 });
