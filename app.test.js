@@ -1,5 +1,4 @@
 const request = require('supertest');
-const express = require('express');
 
 const app = require('./index'); // importing the app from
 
@@ -14,6 +13,6 @@ describe('GET /', () => {
 describe('GET /abc', () => {
     it('should respond with a 404 status for the dummy route', async () => {
         const response = await request(app).get('/abc');
-        expect(response.status).toBe(403);
+        expect(response.status).toBe(404);
     });
 });
