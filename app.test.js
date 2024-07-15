@@ -8,13 +8,13 @@ describe('GET /', () => {
         const response = await request(app).get('/');
         expect(response.status).toBe(200);
         expect(response.text).toBe('Hello World From Remote');
+        expect(response.text).toBe('Hello World From Remote');
     });
 });
 
 describe('GET /abc', () => {
     it('should respond with a 404 status for the dummy route', async () => {
-        const response = await request(app).get('/404');
+        const response = await request(app).get('/abc');
         expect(response.status).toBe(404);
-
     });
 });
